@@ -1,0 +1,160 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+}
+
+.landing-page {
+  background-color: black; 
+  background-image: url('../images/background.png'); 
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.biggest-heading {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 4rem;
+  display: block;
+  font-weight: 400;
+  color: #ffcb05;
+  opacity: 1;
+  text-shadow: 
+    -3px 2px 0 #3d7dca,  
+    -3px 6px 0 #003a70,
+    -4px 3px 0 #003a70,
+    4px 2px 0 #3d7dca;
+
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-92%);
+  z-index: 1000;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Ensure the heading stretches across the screen */
+}
+
+/* Adjust padding to start below the fixed heading */
+.landing-content {
+  padding-top: 120px; /* Adjust based on the height of your biggest-heading */
+  text-align: center;
+  z-index: 1;
+  max-width: 80%;
+  padding: 0 10%;
+}
+
+.subheading {
+  font-family: 'Pokemon Solid';
+  font-weight: 300;
+  color: #f10b0b;
+  font-size: 45px;
+}
+
+.form-label {
+  width: 120px;
+  border-radius: 4px;
+  margin-left: 4px;
+  margin-right: 10px;
+  border: 1.5px solid #003a70;
+  color: rgb(7, 62, 4); /* Label color to match Pokémon theme */
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.form {
+  display: flex; /* Use flexbox to layout items */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-evenly;
+  max-width: 2000px; /* Set a max width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 100px;
+  border: 1px solid yellow;
+  padding:20px;
+}
+
+.form-label-heading {
+  margin-bottom: 0.5rem; /* Space below the label */
+  font-weight: 200; /* Optional: Make the label bold */
+  font-family: 'Pokemon Solid', sans-serif; /* Pokémon font */
+  color: #190df6; /* Heading color to match Pokémon theme */
+}
+
+button {
+  padding: 0.5rem; /* Add some padding inside the button */
+  background-color: #0ad611; /* Green background for the button */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 6px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 0.7rem; /* Decrease button font size */
+}
+
+button:disabled {
+  background-color: #ccc; /* Change button color when disabled */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+.filter-by-name {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(225, 225, 11);
+  color: black;
+}
+
+.type-selection-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #3f4bf1;
+  color: black;
+  border: none;
+}
+
+.table-container {
+  width: 100%; /* Make the table full width */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  margin-top: 20px; /* Add some space above the table */
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px; /* Add padding for cells */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #e85511; /* Border color to match the theme */
+}
+
+.table-container th {
+  background-color: inherit; /* Light background for header */
+  font-family: 'Pokemon Solid', sans-serif; /* Pokémon font */
+  color: #06be28; /* Header text color */
+}
+
+.table-container td {
+  background-color: inherit; /* White background for cells */
+  color: aliceblue;
+}
+
+/* Style for Pokémon images */
+.table-container img {
+  width: 100px; /* Width for the stamp size */
+  height: 100px; /* Keep the height consistent for a stamp size */
+  border: 2px solid #003a70; /* Add a border around the image */
+  border-radius: 5px; /* Round the corners of the image */
+}
+
+/* Hover effect for rows */
+.table-container tr:hover {
+  background-color: #059b34; /* Change background on hover */
+}
