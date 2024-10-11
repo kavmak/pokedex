@@ -33,12 +33,12 @@ body {
   position: fixed;
   top: 20px; /* Adjust as needed */
   left: 50%;
-  transform: translateX(-92%);
-  z-index: 1000;
+  transform: translateX(-306%);
+  /* z-index: 1000; */
   margin-top: 0;
   display: flex;
-  justify-content: space-around;
-  width: 100%; /* Ensure the heading stretches across the screen */
+  justify-content: left;
+  /* width: 100%; Ensure the heading stretches across the screen */
 }
 
 /* Adjust padding to start below the fixed heading */
